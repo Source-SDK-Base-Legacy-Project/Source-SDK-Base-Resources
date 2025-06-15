@@ -151,8 +151,10 @@ Describe 'Install_EP2_Teaser' {
   Context 'when HL2 and SDKBASE2013SP are not installed' {
     It 'returns with exit code = 1' {
       Mock Test-SteamAppInstalled { $false }
-      Invoke-InstallEP2Teaser
-      $LASTEXITCODE | Should -Be 1
+      {
+        Invoke-InstallEP2Teaser
+        $LASTEXITCODE | Should -Be 1
+      }
     }
   }
   
@@ -160,8 +162,10 @@ Describe 'Install_EP2_Teaser' {
     It 'returns with exit code = 1' {
       Mock Test-SteamAppInstalled { $true }
       Mock Test-DirectoryExists { $false }
-      Invoke-InstallEP2Teaser
-      $LASTEXITCODE | Should -Be 1
+      {
+        Invoke-InstallEP2Teaser
+        $LASTEXITCODE | Should -Be 1
+      }
     }
   }
   

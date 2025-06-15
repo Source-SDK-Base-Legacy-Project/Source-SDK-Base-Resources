@@ -19,6 +19,10 @@ Main tool. Used for patching Source SDK Bases.
 
 See [building instructions](BUILDING.md).
 
+## Testing
+
+See [testing instructions](TESTING.md).
+
 ## Contributing
 
 See [contribution guidelines](CONTRIBUTING.md).

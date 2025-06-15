@@ -1,12 +1,8 @@
-# TESTING
-
-## Supported Platforms
-
-See [supported platforms](README.md#Supported-Platforms).
+# Testing
 
 ## Prerequisites
 
-[Configuring CMake](BUILDING.md#configuring-cmake)
+- [Development prerequisites](DEVELOPMENT.md#Prerequisites)
 
 ## Running tests
 

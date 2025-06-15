@@ -15,13 +15,13 @@ Main tool. Used for patching Source SDK Bases.
 - Pester 5.7.1
 - PowerShell 5.1
 
-## Building
+## Installation
 
-See [building instructions](BUILDING.md).
+See [installation](docs/INSTALL.md).
 
-## Testing
+## Development
 
-See [testing instructions](TESTING.md).
+See [development](docs/DEVELOPMENT.md).
 
 ## Contributing
 

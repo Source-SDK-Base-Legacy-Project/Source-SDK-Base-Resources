@@ -1,24 +1,8 @@
-# BUILDING
-
-## Supported Platforms
-
-See [supported platforms](README.md#Supported-Platforms).
+# Building
 
 ## Prerequisites
 
-Everything listed in [built with](README.md#Built-With) with the same version, or higher.
-
-## Configuring CMake
-
-1. The following variables must be configured.
-
-   - `DEV_SHARED_FOLDER`: Content install location in development mode. e.g.
-
-     ```text
-     C:\Users\<USER>\Desktop\shared_folder
-     ```
-
-2. Click *Configure*
+- [Development prerequisites](DEVELOPMENT.md#Prerequisites)
 
 ## Building Source SDK Base Resources installers
 

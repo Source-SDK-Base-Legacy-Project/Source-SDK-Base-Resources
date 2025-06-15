@@ -3,4 +3,5 @@ Installer/common/paths.ini
 Installer/InstallerPaths.nsh
 Installer/setup_env_vars.bat
 scripts/private/paths.ini
+tests/coverage.xml
 *.exe

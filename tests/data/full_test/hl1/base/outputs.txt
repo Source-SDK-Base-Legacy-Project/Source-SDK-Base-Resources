@@ -1,0 +1,1 @@
+resource\hl1_english.txt

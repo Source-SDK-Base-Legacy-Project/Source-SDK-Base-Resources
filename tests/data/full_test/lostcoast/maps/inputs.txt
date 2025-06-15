@@ -1,0 +1,2 @@
+lostcoast_pak_dir.vpk
+maps\d2_lostcoast.bsp

@@ -1,0 +1,2 @@
+hl2mp_pak_dir.vpk
+resource\hl2mp_english.txt

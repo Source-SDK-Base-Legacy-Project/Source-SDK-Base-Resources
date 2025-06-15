@@ -1,0 +1,2 @@
+hl1_pak_dir.vpk
+resource\hl1_english.txt

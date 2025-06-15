@@ -1,0 +1,1 @@
+maps\cs_assault.bsp

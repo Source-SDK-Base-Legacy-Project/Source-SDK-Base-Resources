@@ -1,0 +1,2 @@
+portal_pak_dir.vpk
+maps\testchmb_a_00.bsp

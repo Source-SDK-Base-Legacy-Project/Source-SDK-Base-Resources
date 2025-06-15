@@ -1,0 +1,2 @@
+cstrike_pak_dir.vpk
+resource\cstrike_english.txt

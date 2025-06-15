@@ -1,0 +1,2 @@
+hl1_pak_dir.vpk
+maps\t0a0.bsp

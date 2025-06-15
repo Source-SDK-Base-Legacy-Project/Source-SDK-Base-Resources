@@ -1,0 +1,2 @@
+hl1mp_pak_dir.vpk
+maps\boot_camp.bsp

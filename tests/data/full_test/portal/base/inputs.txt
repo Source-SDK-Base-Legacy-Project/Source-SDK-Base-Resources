@@ -1,0 +1,2 @@
+portal_pak_dir.vpk
+resource\portal_english.txt

@@ -1,0 +1,6 @@
+dummy_base_dir.vpk
+dummy_maps_dir.vpk
+dummy_language_dir.vpk
+base_cstrike_dir.vpk
+maps_cstrike_dir.vpk
+language_cstrike_dir.vpk

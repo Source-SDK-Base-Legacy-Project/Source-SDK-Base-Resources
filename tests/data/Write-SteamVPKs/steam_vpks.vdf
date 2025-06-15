@@ -1,0 +1,14 @@
+"does_this_even_matter"
+{
+	"spewfileio" "false"
+	"mount"
+	{
+		"vpk" "vpks/depot_206"
+		"vpk" "vpks/depot_207"
+		"vpk" "vpks/depot_208"
+		"vpk" "vpks/depot_212"
+		"vpk" "vpks/depot_213"
+		"vpk" "vpks/depot_215"
+		"vpk" "vpks/depot_381"
+	}
+}

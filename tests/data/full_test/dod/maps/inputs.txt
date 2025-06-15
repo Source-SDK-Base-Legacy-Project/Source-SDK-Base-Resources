@@ -1,0 +1,2 @@
+dod_pak_dir.vpk
+maps\dod_anzio.bsp

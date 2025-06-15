@@ -1,0 +1,2 @@
+dod_pak_dir.vpk
+resource\dod_english.txt

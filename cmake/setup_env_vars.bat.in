@@ -1,0 +1,6 @@
+@echo off
+prompt $
+
+set _artifacts_dir=@ARTIFACTS_DIR@
+set _version=@PROJECT_VERSION@
+set _version_full=@PROJECT_VERSION_FULL@

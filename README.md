@@ -6,7 +6,7 @@ Main tool. Used for patching Source SDK Bases.
 
 ## Supported Platforms
 
-- Windows
+- Windows 11 (64-bit)
 
 ## Built with
 

@@ -2,14 +2,12 @@
 !include "TextFunc.nsh"
 
 !ifndef ARCH
-  !error "ARCH not defined. [x86/x64]"
+  !error "ARCH not defined. [x64]"
 !else
-  !if ${ARCH} == x86
-    !echo "Arch = x86"
-  !else if ${ARCH} == x64
+  !if ${ARCH} == x64
     !echo "Arch = x64"
   !else
-    !error "ARCH must be either [x86/x64]"
+    !error "ARCH must be [x64]"
   !endif
 !endif
 
@@ -52,9 +50,7 @@
 Name "${NAME}"
 OutFile "${OUTPUTFILE}_${VERSION_FULL}_Windows_${ARCH}.exe"
 Caption "${CAPTION}"
-!if ${ARCH} == x86
-InstallDir "$PROGRAMFILES32\${APP_NAME}"
-!else if ${ARCH} == x64
+!if ${ARCH} == x64
 InstallDir "$PROGRAMFILES64\${APP_NAME}"
 !endif
 Unicode true

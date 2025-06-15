@@ -6,10 +6,10 @@ include(FetchContent)
 
 set(PROJECT_VERSION_FULL "${PROJECT_VERSION}-alpha.1")
 
-set(INSTALLER_FILES_VERSION "2025-06-14.1" CACHE STRING "Installer Files release version")
+set(INSTALLER_FILES_VERSION "2025-06-15.1" CACHE STRING "Installer Files release version")
 set(DEV_SHARED_FOLDER "" CACHE PATH "Dev shared folder")
 set(DEV_ARCH "x64" CACHE STRING "Dev platform architecture")
-set_property(CACHE DEV_ARCH PROPERTY STRINGS "x64;x86")
+set_property(CACHE DEV_ARCH PROPERTY STRINGS "x64")
 
 if(NOT DEV_SHARED_FOLDER)
   message(FATAL_ERROR "Variable DEV_SHARED_FOLDER is either not defined or empty.")
@@ -23,15 +23,8 @@ set(DOWNLOADS_TOOLS_DIR "${DOWNLOADS_INSTALLER_FILES_DIR}/win-${DEV_ARCH}/tools"
 FetchContent_Populate(
   installer_files_x64
   URL https://github.com/Source-SDK-Base-Legacy-Project/installer-files/releases/download/${INSTALLER_FILES_VERSION}/Installer-Files-win-x64.zip
-  URL_HASH SHA256=5cba8a7ce579ffe252e795d4b518cbe77f21110539555c9375a7d9ec322afdf6
+  URL_HASH SHA256=2717a146ed95a90a94e2129453833c8bfea037de22d9d33a53d6b145c2fad689
   SOURCE_DIR   ${DOWNLOADS_INSTALLER_FILES_DIR}/win-x64
-)
-
-FetchContent_Populate(
-  installer_files_x86
-  URL https://github.com/Source-SDK-Base-Legacy-Project/installer-files/releases/download/${INSTALLER_FILES_VERSION}/Installer-Files-win-x86.zip
-  URL_HASH SHA256=26633bb65b3b68796ab0617e80ec675a371a25f0c439bf0e69ea44d3862aea71
-  SOURCE_DIR   ${DOWNLOADS_INSTALLER_FILES_DIR}/win-x86
 )
 
 set(EXTRACTVPK "${DOWNLOADS_TOOLS_DIR}/ExtractVPK/ExtractVPK.exe")

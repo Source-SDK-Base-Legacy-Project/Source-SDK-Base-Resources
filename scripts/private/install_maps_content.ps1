@@ -35,11 +35,13 @@ if (-not ($Uninstall.IsPresent))
   # Install
   if ($true -eq (Test-DirectoryExists -Path $SDKBASE2006) -and ($Source -eq "2006" -or $Source -eq "both")) {
     Write-Host "Copying ""$GamePath/$GameSubFolder/maps"" files to ""$SDKBASE2006/$GameSubFolder/maps"""
-    Copy-Item "$GamePath\$GameSubFolder\maps" -Destination "$SDKBASE2006\$GameSubFolder\maps" -Recurse -Force
+    New-Item -ItemType Directory -Path "$SDKBASE2006\$GameSubFolder\maps" -Force | Out-Null
+    Copy-Item -Path "$GamePath\$GameSubFolder\maps\*" -Destination "$SDKBASE2006\$GameSubFolder\maps" -Recurse -Force
   }
 
   if ($true -eq (Test-DirectoryExists -Path $SDKBASE2007) -and ($Source -eq "2007" -or $Source -eq "both")) {
     Write-Host "Copying ""$GamePath/$GameSubFolder/maps"" files to ""$SDKBASE2007/$GameSubFolder/maps"""
-    Copy-Item "$GamePath\$GameSubFolder\maps" -Destination "$SDKBASE2007\$GameSubFolder\maps" -Recurse -Force
+    New-Item -ItemType Directory -Path "$SDKBASE2007\$GameSubFolder\maps" -Force | Out-Null
+    Copy-Item -Path "$GamePath\$GameSubFolder\maps\*" -Destination "$SDKBASE2007\$GameSubFolder\maps" -Recurse -Force
   }
 }
